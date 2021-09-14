@@ -78,6 +78,7 @@ struct SlideMenuView: View {
                             .sheet(isPresented: $showSignInView) {
                                 SignInView().environmentObject(self.orderVM).environmentObject(self.loginVM).environmentObject(self.networkVM)
                             }
+                            .withCustomButtonStyle()
                             
                             Button {
                                 showSignUpView.toggle()
@@ -94,6 +95,7 @@ struct SlideMenuView: View {
                             .sheet(isPresented: $showSignUpView) {
                                 SignUpView().environmentObject(self.orderVM).environmentObject(self.loginVM).environmentObject(self.networkVM)
                             }
+                            .withCustomButtonStyle()
                         }
                         .padding(.bottom, 25)
                     }

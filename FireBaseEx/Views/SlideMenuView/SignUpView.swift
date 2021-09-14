@@ -81,6 +81,7 @@ struct SignUpView: View {
                     .alert(isPresented: $loginVM.wrongSignedUp) {
                         alert()
                     }
+                    .withCustomButtonStyle()
                     
                     Spacer()
                 }

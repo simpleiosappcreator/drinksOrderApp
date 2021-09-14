@@ -181,6 +181,7 @@ struct DrinkDetailView: View {
                             })
                             .padding(.top, 50)
                             .disabled(!checkAmount())
+                            .withCustomButtonStyle()
                         }
                         .padding()
                     }

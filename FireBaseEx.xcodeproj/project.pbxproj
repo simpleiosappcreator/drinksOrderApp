@@ -37,6 +37,7 @@
 		1B6A334826CD78E600DA3BBA /* MenuItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6A334726CD78E600DA3BBA /* MenuItemModel.swift */; };
 		1B6A334A26CD875D00DA3BBA /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6A334926CD875D00DA3BBA /* MenuView.swift */; };
 		1B6A334C26CD87BC00DA3BBA /* SnackMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6A334B26CD87BC00DA3BBA /* SnackMenuView.swift */; };
+		1B6FCEE926F07C8F00C62561 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6FCEE826F07C8F00C62561 /* CustomButtonStyle.swift */; };
 		1B71A43B26D553B8008B8793 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B71A43A26D553B8008B8793 /* NetworkMonitor.swift */; };
 		1B75E73826D15BEA0040C136 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75E73726D15BEA0040C136 /* SignInView.swift */; };
 		1B75E73A26D15BF30040C136 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75E73926D15BF30040C136 /* SignUpView.swift */; };
@@ -81,6 +82,7 @@
 		1B6A334726CD78E600DA3BBA /* MenuItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemModel.swift; sourceTree = "<group>"; };
 		1B6A334926CD875D00DA3BBA /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		1B6A334B26CD87BC00DA3BBA /* SnackMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackMenuView.swift; sourceTree = "<group>"; };
+		1B6FCEE826F07C8F00C62561 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		1B71A43A26D553B8008B8793 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		1B75E73726D15BEA0040C136 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		1B75E73926D15BF30040C136 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -239,6 +241,14 @@
 			path = UrlWebView;
 			sourceTree = "<group>";
 		};
+		1B6FCEE726F07C7900C62561 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				1B6FCEE826F07C8F00C62561 /* CustomButtonStyle.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		1BAF546926C2BB3D00B7429C = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +270,7 @@
 		1BAF547426C2BB3D00B7429C /* FireBaseEx */ = {
 			isa = PBXGroup;
 			children = (
+				1B6FCEE726F07C7900C62561 /* Custom */,
 				1BAF548626C2C09900B7429C /* DrinksOrderAppApp.swift */,
 				1B62860E26CACF98001CA2B6 /* Launch Screen.storyboard */,
 				1B6285DD26CAB570001CA2B6 /* Models */,
@@ -434,6 +445,7 @@
 				1B75E73826D15BEA0040C136 /* SignInView.swift in Sources */,
 				1B6285F626CAB589001CA2B6 /* PhotoCacheManager.swift in Sources */,
 				1B6285EF26CAB583001CA2B6 /* CartWithOrders.swift in Sources */,
+				1B6FCEE926F07C8F00C62561 /* CustomButtonStyle.swift in Sources */,
 				1B61231A26D2AE0200A80AAA /* LoginViewModel.swift in Sources */,
 				1B68B96126D90436001306F0 /* UrlWebView.swift in Sources */,
 				1B66545726CEB85800A7CE27 /* ShowCustomerInfoSheet.swift in Sources */,

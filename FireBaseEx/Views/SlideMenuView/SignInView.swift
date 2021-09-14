@@ -102,6 +102,7 @@ struct SignInView: View {
                     .alert(isPresented: $loginVM.wrongSignedIn) {
                         alert()
                     }
+                    .withCustomButtonStyle()
                     
                     if loginVM.isLoadingSignIn{
                         ProgressView()
