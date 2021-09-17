@@ -79,7 +79,7 @@ struct CartWithOrdersView: View {
                             .padding(.bottom)
                             .multilineTextAlignment(.center)
                     }).sheet(isPresented: $showEidtCustomerInfoSheet, content: {
-                        EditCustomerInfoView(isCompletedCustomerInfoSheet: $isCompletedCustomerInfoSheet).environmentObject(self.orderVM)
+                        EditCustomerInfoView(isCompletedCustomerInfoSheet: $isCompletedCustomerInfoSheet).environmentObject(self.orderVM).environmentObject(self.networkVM)
                     })
                         
                         Button(action: {

@@ -80,4 +80,17 @@ class OrderViewModel: ObservableObject{
     func checkCustomerInfo(name: String, phoneNumber: String, location: String) -> Bool{
         return name.count > 3 && phoneNumber.count > 3 && location.count > 3 ? true : false
     }
+    
+    func editItem(drinkName: String, drinkAmount: String, drinkPrice: String, drinkTotalPrice: Int, sweetness: String, toppings: String, ice: String, size: String, model: Order){
+        
+        self.cartOverallPrice -= Int(model.drinkTotalPrice) ?? 0
+        
+        guard let index  = orders.firstIndex(where: {$0.id == model.id}) else{return}
+        
+        let newOrder = Order(drinkName: drinkName, drinkAmount: drinkAmount, drinkPrice: drinkPrice, drinkTotalPrice: "\(drinkTotalPrice)", sweetness: sweetness, toppings: toppings, ice: ice, size: size, customerName: customerName, customerPhoneNumber: customerPhoneNumber, deliveryLocation: deliveryLocation)
+        
+        self.orders[index] = newOrder
+        
+        self.cartOverallPrice += drinkTotalPrice
+    }
 }

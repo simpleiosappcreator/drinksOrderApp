@@ -7,7 +7,7 @@
 
 import Foundation
 struct Order: Identifiable, Codable{
-    let id: String = UUID().uuidString
+    let id: String
     let drinkName: String
     let drinkAmount: String
     let drinkPrice: String
@@ -20,7 +20,8 @@ struct Order: Identifiable, Codable{
     let customerPhoneNumber: String
     let deliveryLocation: String
     
-    init(drinkName: String, drinkAmount: String, drinkPrice: String, drinkTotalPrice: String, sweetness: String, toppings: String, ice: String, size: String, customerName: String, customerPhoneNumber: String, deliveryLocation: String){
+    init(id: String = UUID().uuidString, drinkName: String, drinkAmount: String, drinkPrice: String, drinkTotalPrice: String, sweetness: String, toppings: String, ice: String, size: String, customerName: String, customerPhoneNumber: String, deliveryLocation: String){
+        self.id = id
         self.drinkName = drinkName
         self.drinkAmount = drinkAmount
         self.drinkPrice = drinkPrice
